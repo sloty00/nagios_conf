@@ -1,0 +1,12 @@
+############## DEFINICION DE SERVIDORES ##############q####
+
+define host {
+	use		linux-server
+        host_name       Servidor Vcenter
+        alias           Vcenter
+        check_interval  1
+	parents         Servidores CASS
+        address         10.0.0.31                     
+        icon_image      vsphere_icon.png
+        notification_interval     1
+}
